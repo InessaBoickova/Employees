@@ -7,8 +7,9 @@ class EmployeesList extends React.Component{
     render(){
 
         const elem = this.props.data.map((item)=>{
+            let{id, ...itemProps} = item
             return (
-                <EmployeesListItem {...item}/>
+                <EmployeesListItem key ={id} {...itemProps}/>
             )
         })
 

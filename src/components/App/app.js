@@ -7,9 +7,9 @@ import EmployeesAddForm from '../EmployeesAddForm/employees-add-form';
 import './app.css';
 
 let data = [
-      {name: 'John S.' , salary: 1000 , increase: false},
-      {name: 'Masha R.', salary: 1200 , increase: false},
-      {name: 'Alex M.', salary: 800, increase: true}
+      {name: 'John S.' , salary: 1000 , increase: false, id: 1},
+      {name: 'Masha R.', salary: 1200 , increase: false, id: 2},
+      {name: 'Alex M.', salary: 800, increase: true, id: 3}
   ]
 
 class App extends React.Component{
