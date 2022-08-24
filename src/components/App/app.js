@@ -6,6 +6,12 @@ import EmployeesList from '../EmployeesList/employees-list';
 import EmployeesAddForm from '../EmployeesAddForm/employees-add-form';
 import './app.css';
 
+let data = [
+      {name: 'John S.' , salary: 1000 , increase: false},
+      {name: 'Masha R.', salary: 1200 , increase: false},
+      {name: 'Alex M.', salary: 800, increase: true}
+  ]
+
 class App extends React.Component{
   render(){
     return (
@@ -15,7 +21,7 @@ class App extends React.Component{
               <SearchPanel/>
               <AppFilter/> 
             </div>
-            <EmployeesList/>
+            <EmployeesList data = {data}/>
             <EmployeesAddForm/> 
        </div>
     )
