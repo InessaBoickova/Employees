@@ -15,12 +15,20 @@ class EmployeesListItem extends React.Component{
 
         return(
             <li className={className}>
-                <span className="list-group-item-label" onClick={this.props.onToggleProp} data-toggle= 'rise'>{this.props.name}</span>
-                <input type="text" className="list-group-item-input" defaultValue={this.props.salary}/>
+                <span className="list-group-item-label" 
+                        onClick={this.props.onToggleProp}
+                        data-toggle= 'rise'>
+                    {this.props.name}
+                </span>
+                <input type="text" 
+                        className="list-group-item-input" 
+                        defaultValue={this.props.salary}/>
                 <div className='d-flex justify-content-center align-items-center'>
                     <button type="button"
-                            className="btn-cookie btn-sm" onClick={this.props.onToggleProp} data-toggle= 'increase'>
-                    <i className="fas fa-cookie"></i>
+                            className="btn-cookie btn-sm" 
+                            onClick={this.props.onToggleProp} 
+                            data-toggle= 'increase'>
+                        <i className="fas fa-cookie"></i>
                     </button>
 
                     <button type="button"
